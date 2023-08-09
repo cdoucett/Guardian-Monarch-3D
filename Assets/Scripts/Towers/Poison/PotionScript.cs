@@ -79,7 +79,6 @@ public class PotionScript : MonoBehaviour
             HealthManager enemyHealth = other.gameObject.GetComponent<HealthManager>();
             transform.localScale = new Vector3(2,2,2);
             if(rainbowPotions){
-                print("Rainbow: " + damage + " " + slowTime + " " + freezeDuration + " " + posionTicks);
                 enemyHealth.UpdateHealth(-damage);
                 enemyHealth.UpdateSpeed(slowTime,5f);
                 enemyHealth.UpdateSpeed(0f,freezeDuration);
@@ -110,7 +109,6 @@ public class PotionScript : MonoBehaviour
 
     private IEnumerator DestoryWhenMiss(){
         yield return new WaitForSeconds(timeToDestory);
-        print("Missed!");
         Destroy(gameObject);
     }
 

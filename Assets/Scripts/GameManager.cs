@@ -90,7 +90,6 @@ public class GameManager : MonoBehaviour
             Waves 15-19: Buffers +3% pool (1% each). End at -> 15% buffers 25% brutes 30% archers 30% knights
             Waves 20+: Buffers & Brutes +1% pool (1% each). Max at 45% buffer 55% brutes */
         
-        print("Spawning enemyCount: " + enemyCount);
         if(wave > 19){
             enemyBrutePercent += 0.01f;
             enemyBufferPercent += 0.01f;
@@ -159,7 +158,6 @@ public class GameManager : MonoBehaviour
             enemiesSpawning--;
         }
         
-        print("Done spawnning");
         Scale();
         
     }
