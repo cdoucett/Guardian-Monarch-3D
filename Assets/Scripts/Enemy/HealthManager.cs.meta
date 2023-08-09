@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: f2fc3091d2c1f43478a4303e28d12ebc
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - enemy: {instanceID: 0}
+  - enemyAnim: {instanceID: 0}
+  - contagionExplosion: {fileID: 2679066459913430953, guid: 02aa6b485e0822c4a85860454dc74987, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
