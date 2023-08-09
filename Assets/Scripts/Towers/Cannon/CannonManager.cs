@@ -88,10 +88,8 @@ public class CannonManager : MonoBehaviour
         upgradeCount++;
         GUIManager.instance.SetUpgradeTower(gameObject);
         if(path.Equals("Huge Bombs")){
-            print("Huge path chosen");
             explosionRadius = new Vector3(12,12,12);
         } else {
-            print("Contagion path chosen");
             contagion = true;
         }
     }

@@ -53,7 +53,7 @@ public class beamScript : MonoBehaviour
             enemyHealth.UpdateHealth(-damage);
         }
         if(rampingTicks == rampMax){
-            print("Damage maxed! " + damage);
+            
         } else {
             damage *= 2;
             rampingTicks++;

@@ -63,7 +63,6 @@ public class cannonBallScript : MonoBehaviour
 
     private IEnumerator DestoryWhenMiss(){
         yield return new WaitForSeconds(timeToDestory);
-        print("Missed!");
         Destroy(gameObject);
     }
 

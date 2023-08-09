@@ -87,11 +87,9 @@ public class ArcherManager : MonoBehaviour
         upgradeCount++;
         GUIManager.instance.SetUpgradeTower(gameObject);
         if(path_Txt.Equals("Sniper Arrows")){
-            print("Sniper Path chosen");
             range += 10f;
             damage += 20f;
         } else {
-            print("Bomb Path chosen");
             bombArrows = true;
         }
     }

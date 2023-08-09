@@ -111,7 +111,7 @@ public class MageManager : MonoBehaviour
             targetMax = 4;
         } else if (upgradeCount == 2){
             range += 3f;
-            chargeSpeed -= 0.5f;
+            chargeSpeed -= 0.25f;
         } else if (upgradeCount == 3){
             maxTicks = 5;
         }
@@ -121,13 +121,11 @@ public class MageManager : MonoBehaviour
         upgradeCount++;
         GUIManager.instance.SetUpgradeTower(gameObject);
         if(path.Equals("Infernal Beam")){
-            print("Infernal Beam path");
             targetMax = 1;
-            chargeSpeed -= 1f;
+            chargeSpeed -= 0.75f;
             maxTicks = 9;
             infernalBeam = true;
         } else {
-            print("Omni Beam path");
             targetMax = int.MaxValue;
             maxTicks = 3;
         }
@@ -155,7 +153,6 @@ public class MageManager : MonoBehaviour
     }
 
     public void ShowRange(bool toggle){
-        print(range);
         radiusRange.transform.localScale = new Vector3(1,.001f,1)*range/2.25f;
         radiusRange.SetActive(toggle);
     }
